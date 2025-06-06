@@ -24,10 +24,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
-      - id: love-build
-        # You may pin to the exact commit or the version.
-        # uses: nhartland/love-build@59f670bb62a027a04e6d0cc3502f807b5365ef8e
-        uses: nhartland/love-build@v1
+      
+      - uses: nhartland/love-build@v1
+        id: love-build
         with:
           # Name of the application to be built
           app_name: love-snake
